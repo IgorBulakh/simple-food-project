@@ -1,15 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Simple Food</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img class="logo__img" src="./images/logo.svg" alt="">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link menu__link--active" href="#">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Блюда</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="control">
+            <li class="control__item">
+              <a class="control__link" href="#">
+                <svg class="control__link-icon">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
+              </a>
+              <span class="sr-only">поиск по сайту</span>
+            </li>
+            <li class="control__item">
+              <a class="control__link" href="#">
+                <svg class="control__link-icon">
+                  <use xlink:href="images/sprite.svg#basket"></use>
+                </svg>
+                <span class="control__link-num">4</span>
+                <span class="sr-only">корзина товаров</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <footer class="footer">
+    <div class="container">
+    </div>
+  </footer>
 
   <script src="js/main.min.js"></script>
 </body>

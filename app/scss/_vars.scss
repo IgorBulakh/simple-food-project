@@ -1,0 +1,23 @@
+$background-body: #FFFFFF;
+$defoult-text: #31352b;
+$orange-active: #FF6838;
+$light-silver: #f9faff;
+$darck-siver: #ececec;
+$gray-color: #c2c2c2;
+$darck-blue: #363853;
+
+%rubik-300 {
+  font-family: 'Rubik-Light', sans-serif;
+  font-weight: 300;
+}
+
+%rubik-400 {
+  font-family: 'Rubik-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%rubik-600 {
+  font-family: 'Rubik-Medium', sans-serif;
+  font-weight: 600;
+}
+
