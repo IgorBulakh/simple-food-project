@@ -1,5 +1,15 @@
+.container {
+  outline: 2px solid black;
+}
+
+html {
+  min-height: 100vh;
+}
+
 body {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   @extend %rubik-400;
   font-size: 20px;
   line-height: 1.5;
@@ -7,11 +17,20 @@ body {
   background-color: $background-body;
 }
 
+a {
+  font-size: 18px;
+  line-height: 21px;
+  color: inherit;
+}
+
+.main {
+  flex-grow: 1;
+}
+
 .container {
   max-width: 1230px;
   margin: 0 auto;
   padding: 0 15px;
-  outline: 2px solid black
 }
 
 .sr-only {
@@ -25,4 +44,15 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.button {
+  padding: 13px;
+  @extend %rubik-600;
+  font-size: 14px;
+  line-height: 1.2;
+  color: $background-body;
+  background-color: $orange-active;
+  border-radius: 6px;
+  transition: all 0.3s;
 }
