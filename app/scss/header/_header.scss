@@ -102,7 +102,7 @@
       stroke: $defoult-text;
 
       .control__link:hover & {
-        stroke: $background-body;
+        stroke: $white-color;
       }
 
       .control__link:active & {
@@ -113,7 +113,7 @@
     &-num {
       position: absolute;
       font-size: 10px;
-      color: $background-body;
+      color: $white-color;
       width: 14px;
       height: 14px;
       top: 8px;
@@ -122,6 +122,11 @@
       text-align: center;
       line-height: 14px;
       background-color: $orange-active;
+
+      .control__link:hover & {
+        background-color: $white-color;
+        color: $defoult-text;
+      }
     }
   }
 

@@ -14,7 +14,7 @@ body {
   font-size: 20px;
   line-height: 1.5;
   color: $defoult-text;
-  background-color: $background-body;
+  background-color: $light-silver;
 }
 
 a {
@@ -51,7 +51,7 @@ a {
   @extend %rubik-600;
   font-size: 14px;
   line-height: 1.2;
-  color: $background-body;
+  color: $white-color;
   background-color: $orange-active;
   border-radius: 6px;
   transition: all 0.3s;
