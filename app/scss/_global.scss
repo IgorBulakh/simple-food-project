@@ -1,0 +1,92 @@
+html {
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  @extend %rubik-400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: $defoult-text;
+  background-color: $light-silver;
+}
+
+a {
+  font-size: 18px;
+  line-height: 21px;
+  color: inherit;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.link {
+  border-radius: 5px;
+  transition: all 0.3s;
+
+  &:hover {
+    color: $orange-active;
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 0px 2px rgba($orange-active, 0.5);
+  }
+
+  &:active {
+    text-shadow: 2px 2px 5px rgba($defoult-text, 0.5);
+  }
+}
+
+.button {
+  padding: 12px;
+  @extend %rubik-600;
+  font-size: 14px;
+  line-height: 1.2;
+  color: $white-color;
+  background-color: $orange-active;
+  border-radius: 6px;
+  transition: all 0.3s;
+
+  &:hover {
+      background-color: $white-color;
+      color: $orange-active;
+      box-shadow: 0px 0px 0px 2px rgba($orange-active, 0.5);
+    }
+
+    &:focus {
+      background-color: rgba($orange-active, 0.1);
+      box-shadow: 0px 0px 0px 2px rgba($orange-active, 0.5);
+      color: $orange-active;
+    }
+
+    &:active {
+      background-color: rgba($orange-active, 0.1);
+      color: $orange-active;
+    }
+}
+
+.title {
+  text-align: center;
+}
