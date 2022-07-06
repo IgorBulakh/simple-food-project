@@ -1,0 +1,138 @@
+.footer {
+
+  .logo {
+    margin-bottom: 30px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  &__label {
+    display: block;
+    margin-bottom: 12px;
+      }
+
+  &__input {
+    width: 100%;
+    padding: 13px 15px;
+    font-size: 14px;
+    line-height: 1.2;
+    box-shadow: 0px 0px 0px 2px rgba($gray, 1);
+    border-radius: 5px;
+
+    &:hover::placeholder {
+      color: inherit;
+    }
+
+    &:focus {
+      box-shadow: 0px 0px 0px 2px rgba($orange-crayola, 1);
+    }
+  }
+
+  &__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: $white;
+
+    &:hover {
+      fill: $orange-crayola;
+    }
+
+    &:active,
+    &:focus {
+      fill: $orange-crayola;
+    }
+  }
+
+  &__button-icon {
+    margin-right: 10px;
+  }
+
+  &__menu {
+    display: inline-block;
+    column-count: 3;
+  }
+
+  &__copy {
+    padding: 30px 0;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    border-top: 1px solid rgba($gray, 0.2);
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: flex-start;
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-right: 13px;
+    }
+  }
+
+  &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 39px;
+      height: 39px;
+      background-color: $dark-siver;
+      border-radius: 50%;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: $orange-crayola;
+        fill: $white;
+      }
+
+      &:focus {
+        box-shadow: 0px 0px 0px 2px rgba($orange-crayola, 0.5);
+          background-color: rgba($orange-crayola, 0.1);
+      }
+
+      &:active {
+        background-color: rgba($orange-crayola, 0.1);
+        fill: $orange-crayola;
+      }
+  }
+}
+
+.address {
+
+  &__item {
+    margin-bottom: 15px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+}
+
+// .footer {
+
+//   &__list {
+//     display: flex;
+//     justify-content: space-between;
+//     padding-bottom: 60px;
+//   }
+
+//   &__item {
+//     width: 17%;
+
+//     &-subitem {
+//       margin-bottom: 20px;
+//     }
+//   }
+//   
+//   
+// }
+
+

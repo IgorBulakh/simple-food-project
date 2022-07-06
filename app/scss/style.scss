@@ -1,14 +1,13 @@
-@import'vars';
 @import'fonts';
 @import'reset';
 @import'libs';
+@import'vars';
 @import'global';
 
+@import'components/header';
+@import'components/logo';
+@import'components/sections/hero';
+@import'components/sections/category';
+@import'components/footer';
 
-@import'./header/header';
-@import'./footer/footer';
-@import'./main/hero';
-@import'./main/category';
-
-
-@import'media';
+// @import'media';
