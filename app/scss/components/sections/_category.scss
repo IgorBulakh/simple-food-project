@@ -1,5 +1,6 @@
 .category {
-    padding-top: 120px;
+    padding: 120px 0;
+    text-align: center;
 
     &__title {
       margin-bottom: 60px;
@@ -9,10 +10,6 @@
       display: flex;
       justify-content: space-evenly;
       margin-bottom: 45px;
-    }
-
-    &__item {
-    
     }
 
     &__button {
@@ -46,43 +43,7 @@
     &__button-icon {
       margin-right: 10px;
     }
+
 }
 
 
-// .cart {
-//   min-height: 630px;
-//   display: grid;
-//   grid-template-columns: repeat(5, 1fr);
-//   grid-gap: 30px;
-//   margin-bottom: 60px;
-//   text-align: center;
-
-//   &__img {
-//     margin: 0 auto 10px;
-//   }
-
-//   &__list {
-//     padding: 20px 15px;
-//     box-shadow: 0px 0px 0px 2px rgba($gray, 1);
-//     border-radius: 5px;
-//     transition: all 0.3s;
-
-//     &:hover {
-//       box-shadow: 0px 0px 0px 2px rgba($orange-crayola, 1);
-//     }
-//   }
-
-//   &__subtitle {
-//     font-weight: 400;
-//     margin-bottom: 10px;
-//     font-size: 15px;
-//     line-height: 1.2;
-//   }
-
-//   &__price {
-//     font-weight: 600;
-//     margin-bottom: 10px;
-//     font-size: 15px;
-//     line-height: 1.4;
-//   }
-// }
