@@ -6,7 +6,7 @@
       margin-bottom: 60px;
     }
     
-    &__list {
+    &__menu {
       display: flex;
       justify-content: space-evenly;
       margin-bottom: 45px;
@@ -42,6 +42,13 @@
 
     &__button-icon {
       margin-right: 10px;
+    }
+
+    &__items {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 30px;
+      margin-bottom: 60px;
     }
 
 }
