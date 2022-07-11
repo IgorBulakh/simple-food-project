@@ -1,0 +1,22 @@
+.restaurants {
+  // ---------------------
+  // outline: 2px solid grey;
+  // background-color: rgb(211, 211, 154);
+  // ---------------------
+
+  &__title {
+    margin-bottom: 45px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+
+  &__item {
+    
+  }
+
+  
+}
