@@ -37,7 +37,11 @@
 
   &__time{
     display: flex;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 300;
     align-items: center;
+    opacity: 0.8;
   }
 
   &__clock {
