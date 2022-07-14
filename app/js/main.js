@@ -1,7 +1,7 @@
 $(function () {
-  $(".slider__inner").slick({
+  $(".response__slider-inner").slick({
     dots: true,
-    arrows: false,
+    arrows: true,
     fade: true,
     autoplay: true,
     autoplaySpeed: 2000,
