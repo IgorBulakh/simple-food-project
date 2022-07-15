@@ -31,7 +31,24 @@
   &__text--quotes::after {
     content: ' ';
     position: absolute;
+    width: 24px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
   }
+
+  &__text--quotes::before {
+    background-image: url(../../../images/before.png);
+    left: -40px;
+  }
+
+  &__text--quotes::after {
+    background-image: url(../../../images/after.png);
+    right: -40px;
+  }
+
   
   &__name{
     margin-bottom: 15px;
@@ -50,3 +67,4 @@
   }
 
 }
+
