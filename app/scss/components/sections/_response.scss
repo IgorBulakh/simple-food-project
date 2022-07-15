@@ -5,10 +5,6 @@
     margin-bottom: 45px;
   }
 
-  &__slider-inner {
-
-  }
-
   &__block{
     display: flex;
     justify-content: space-evenly;
@@ -70,32 +66,5 @@
 
   }
 
-  .slick-dots {
-    display: flex;
-    justify-content: center;
-
-    li {
-      &:not(:last-child) {
-          margin-right: 15px;
-        }
-      
-      button {
-        padding: 0;
-        font-size: 0;
-        background-color: $gray;
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-      }
-      
-      &.slick-active {
-        button {
-          background-color: $orange-crayola;
-        }
-      }
-    }
-
-
-  }
-
 }
+
