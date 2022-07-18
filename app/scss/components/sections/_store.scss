@@ -2,20 +2,14 @@
   padding: 60px 0;
 
   &__content {
-    padding-right: 570px;
+    padding: 50px 570px 40px 0;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
   }
 
-  // &__content {
-  //   display: flex;
-  //   align-items: center;
-  // }
-
   &__box {
-    max-width: 100%;
-    padding-right: 60px;
+    max-width: 80%;
   }
 
   &__title {

@@ -4,20 +4,31 @@
   stroke: $gray;
 
   .slick-arrow {
+    // outline: 2px solid;
+
+
     position: absolute;
+    display: inline-flex;
     top: 92%;
     background-repeat: no-repeat;
     background-size: contain;
+    border-radius: 50%;
 
 
     &:hover{
       fill: rgba($orange-crayola,  0.7);
       stroke: rgba($orange-crayola,  0.7);
+      background-color: rgba($orange-crayola, 0.1);
     }
 
     &:active{
       fill: rgba($orange-crayola,  0.7);
+      background-color: rgba($orange-crayola, 0.1);
       stroke: transparent;
+    }
+
+    &:focus {
+      box-shadow: 0px 0px 0px 2px rgba($orange-crayola, 0.7);
     }
 
     &.slick-next {
