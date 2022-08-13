@@ -1,0 +1,43 @@
+.breadcrumbs {
+  background-color: rgba($orange-crayola, 0.1);
+  padding: 24px 0;
+
+  &__items {
+    display: flex;
+
+  }
+
+  &__item {
+    display: flex;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../../../images/icons/nextarrow.svg);
+      background-repeat: no-repeat;
+      opacity: 0.5;
+      width: 20px;
+      height: 20px;
+      top: -1px;
+      right: 0;
+    }
+    
+    &:last-child {
+      color: $orange-crayola;
+      &::after {
+        display: none;
+      }
+    }
+
+    &:not(:last-child) {
+      padding-right: 20px;
+    }
+  }
+
+    &__link {
+      font-size: 14px;
+      line-height: 1.2;
+      opacity: 0.8;
+    }
+}
