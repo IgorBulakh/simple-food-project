@@ -10,4 +10,9 @@ $(function () {
     autoplay: true,
     autoplaySpeed: 2000,
   });
+
+  $(".filter-price__input").ionRangeSlider({
+    type: "double",
+    // prefix: "$",
+  });
 });

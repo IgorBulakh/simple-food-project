@@ -1,0 +1,16 @@
+.catalog {
+  padding: 60px 0;
+
+  &__title {
+    text-align: left;
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__filters {
+    width: 270px;
+  }
+
+}
