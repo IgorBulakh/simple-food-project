@@ -109,5 +109,77 @@ a {
   text-align: center;
 }
 
+.filter {
+  &__item {
+    padding: 15px 15px 25px;
+    background: $white;
+    border: 1px solid $dark-siver;
+    border-radius: 5px;
+    
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    color: $dark-blue;
+    border-bottom: 1px solid $dark-siver;
+  }
+}
+
+.irs--flat .irs-line {
+  top: 25px;
+  height: 2px;
+  background-color: $gray;
+}
+
+.irs--flat .irs-bar {
+  top: 25px;
+  height: 2px;
+  background-color: $orange-crayola;
+}
+
+.irs--flat .irs-handle > i:first-child {
+  position: absolute;
+  display: block;
+  top: -5px;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: $orange-crayola;
+}
+
+.irs--flat .irs-min, .irs--flat .irs-max {
+  display: none;
+}
+
+.irs-from, .irs-to, .irs-single {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 40px;
+  margin-bottom: 25px;
+  top: -15px;
+  background-color: $orange-crayola;
+
+}
+
+.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
+  margin-bottom: 25px;
+  color: inherit;
+  background-color: rgba($orange-crayola, 0.3);
+}
+
+.irs--flat .irs-from::before, .irs--flat .irs-to::before, .irs--flat .irs-single::before {
+  display: none;
+}
+
 
 
