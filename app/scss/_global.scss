@@ -132,54 +132,89 @@ a {
   }
 }
 
+// .irs--flat .irs-line {
+//   top: 25px;
+//   height: 2px;
+//   background-color: $gray;
+// }
+
+// .irs--flat .irs-bar {
+//   top: 25px;
+//   height: 2px;
+//   background-color: $orange-crayola;
+// }
+
+// .irs--flat .irs-handle > i:first-child {
+//   position: absolute;
+//   display: block;
+//   top: -5px;
+//   left: 50%;
+//   width: 18px;
+//   height: 18px;
+//   border-radius: 50%;
+//   background-color: $orange-crayola;
+// }
+
+// .irs--flat .irs-min, .irs--flat .irs-max {
+//   display: none;
+// }
+
+// .irs-from, .irs-to, .irs-single {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 70px;
+//   height: 40px;
+//   margin-bottom: 25px;
+//   top: -15px;
+//   background-color: $orange-crayola;
+
+// }
+
+// .irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
+//   margin-bottom: 25px;
+//   color: inherit;
+//   background-color: rgba($orange-crayola, 0.3);
+// }
+
+// .irs--flat .irs-from::before, .irs--flat .irs-to::before, .irs--flat .irs-single::before {
+//   display: none;
+// }
+
+
+.irs--flat {
+  height: 85px;
+}
+
 .irs--flat .irs-line {
-  top: 25px;
   height: 2px;
   background-color: $gray;
+  border-radius: none;
+
 }
 
 .irs--flat .irs-bar {
-  top: 25px;
   height: 2px;
   background-color: $orange-crayola;
 }
 
-.irs--flat .irs-handle > i:first-child {
-  position: absolute;
-  display: block;
-  top: -5px;
-  left: 50%;
+.irs--flat .irs-handle {
+  top: 17px;
   width: 18px;
   height: 18px;
-  border-radius: 50%;
   background-color: $orange-crayola;
+  border-radius: 50%;
+}
+
+
+.irs--flat .irs-handle > i:first-child {
+  display: none;
 }
 
 .irs--flat .irs-min, .irs--flat .irs-max {
   display: none;
 }
 
-.irs-from, .irs-to, .irs-single {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 70px;
-  height: 40px;
-  margin-bottom: 25px;
-  top: -15px;
-  background-color: $orange-crayola;
-
-}
-
 .irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
-  margin-bottom: 25px;
-  color: inherit;
-  background-color: rgba($orange-crayola, 0.3);
-}
-
-.irs--flat .irs-from::before, .irs--flat .irs-to::before, .irs--flat .irs-single::before {
   display: none;
 }
-
-
-

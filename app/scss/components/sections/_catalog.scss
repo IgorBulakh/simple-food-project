@@ -14,3 +14,30 @@
   }
 
 }
+
+.filter-price {
+
+  &__label {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__box {
+    font-size: 16px;
+    line-height: 1.2;
+    color: $gray;
+  }
+
+  &__prev {
+    display: inline-flex;
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($orange-crayola, 0.2);
+    font-size: 16px;
+    line-height: 1;
+    color: $fir-green;
+  }
+}
