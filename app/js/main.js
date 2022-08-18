@@ -13,6 +13,13 @@ $(function () {
 
   $(".filter-price__input").ionRangeSlider({
     type: "double",
-    // prefix: "$",
+    onStart: function (data) {
+      $(".filter-price__prev--min").text(data.from);
+      $(".filter-price__prev--max").text(data.to);
+    },
+    onChange: function (data) {
+      $(".filter-price__prev--min").text(data.from);
+      $(".filter-price__prev--max").text(data.to);
+    },
   });
 });
