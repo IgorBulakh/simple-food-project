@@ -9,4 +9,12 @@ $blue-100: #00AAFF;
 $red-100: #FF2222;
 
 
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
 
