@@ -21,9 +21,6 @@ body {
   line-height: 1.5;
   color: $fir-green;
   background-color: $light-silver;
-
-  // after delet
-  // background-color: rgb(81, 56, 56);
 }
 
 a {
@@ -131,55 +128,6 @@ a {
     border-bottom: 1px solid $dark-siver;
   }
 }
-
-// .irs--flat .irs-line {
-//   top: 25px;
-//   height: 2px;
-//   background-color: $gray;
-// }
-
-// .irs--flat .irs-bar {
-//   top: 25px;
-//   height: 2px;
-//   background-color: $orange-crayola;
-// }
-
-// .irs--flat .irs-handle > i:first-child {
-//   position: absolute;
-//   display: block;
-//   top: -5px;
-//   left: 50%;
-//   width: 18px;
-//   height: 18px;
-//   border-radius: 50%;
-//   background-color: $orange-crayola;
-// }
-
-// .irs--flat .irs-min, .irs--flat .irs-max {
-//   display: none;
-// }
-
-// .irs-from, .irs-to, .irs-single {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   width: 70px;
-//   height: 40px;
-//   margin-bottom: 25px;
-//   top: -15px;
-//   background-color: $orange-crayola;
-
-// }
-
-// .irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
-//   margin-bottom: 25px;
-//   color: inherit;
-//   background-color: rgba($orange-crayola, 0.3);
-// }
-
-// .irs--flat .irs-from::before, .irs--flat .irs-to::before, .irs--flat .irs-single::before {
-//   display: none;
-// }
 
 
 .irs--flat {

@@ -41,3 +41,43 @@
     color: $fir-green;
   }
 }
+
+.filter-offer {
+
+  &__form {
+    position: relative;
+  }
+
+  &__label {
+    padding-left: 35px;
+    display: flex;
+    align-items: center;
+    
+    &:not(:last-child) {
+      margin-bottom: 12px;
+      }
+    }
+
+  &__input {
+    @extend %checkbox-hidden;
+    &:checked + .filter-offer__checkbox {
+      border: 1px solid $fir-green;
+      border-radius: 3px;
+      background-image: url(../../../images/icons/check.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__checkbox {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background-color: rgba($orange-crayola, 0.2);
+    border: 1px solid $dark-siver;
+    border-radius: 3px;
+    left: 0%;
+  }
+
+}
+
