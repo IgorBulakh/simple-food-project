@@ -72,21 +72,68 @@
 
     <section class="catalog">
       <div class="container">
-        <h2 class="title catalog__title">Каталог продуктов</h2>
+        <div class="catalog__head">
+          <h2 class="title catalog__title">Каталог продуктов</h2>
+          <ul class="catalog__show">
+            <li class="catalog__show-item">
+              <select class="catalog__select">
+                <option value="">По названию</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+              </select>
+            </li>
+            <li class="catalog__show-item">
+              <select class="catalog__select">
+                <option value="">по 12</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+
         <div class="catalog__inner">
           <div class="catalog__filters filter">
             <div class="filter-category filter__item">
               <h3 class="filter__title">Категории</h3>
-              <ul class="filter-category__lists">
-                <li class="filter-category__list"></li>
-                <li class="filter-category__list"></li>
-                <li class="filter-category__list"></li>
-                <li class="filter-category__list"></li>
-                <li class="filter-category__list"></li>
-                <li class="filter-category__list"></li>
-                <li class="filter-category__list"></li>
-                <li class="filter-category__list"></li>
-              </ul>
+              <form class="filter-category__form" action="#">
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <span class="filter-category__checkbox">Бургеры</span>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <span class="filter-category__checkbox">Пицца</span>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <span class="filter-category__checkbox">Сендвичи</span>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <span class="filter-category__checkbox">Азиатская кухня</span>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <span class="filter-category__checkbox">Сеты</span>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <span class="filter-category__checkbox">Европейская кухня</span>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <span class="filter-category__checkbox">Напитки</span>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <span class="filter-category__checkbox">Алкоголь</span>
+                </label>
+              </form>
             </div>
             <div class="filter-offer filter__item">
               <h3 class="filter__title">Предложения</h3>
@@ -128,7 +175,76 @@
               </form>
             </div>
           </div>
-          <div class="catalog__content"></div>
+          <div class="catalog-content">
+            <ul class="catalog-content__inner">
+              <li class="category__item">
+                <article class="cart">
+                  <img class="cart__img" src="images/content/category/cheez.jpg" alt="чисбургер" width="140">
+                  <h3 class="cart__subtitle">Чизбургер с листьями салата</h3>
+                  <p class="cart__price">160 руб.</p>
+                  <button class="button cart__btn" type="button">В корзину</button>
+                </article>
+              </li>
+              <li class="category__item">
+                <article class="cart">
+                  <img class="cart__img" src="images/content/category/Burger.jpg" alt="чисбургер" width="140">
+                  <h3 class="cart__subtitle">Бифбургер</h3>
+                  <p class="cart__price">190 руб.</p>
+                  <button class="button cart__btn" type="button">В корзину</button>
+                </article>
+              </li>
+              <li class="category__item">
+                <article class="cart">
+                  <img class="cart__img" src="images/content/category/king_cheez.jpg" alt="чисбургер" width="140">
+                  <h3 class="cart__subtitle">Королевский чизбургер</h3>
+                  <p class="cart__price">260 руб.</p>
+                  <button class="button cart__btn" type="button">В корзину</button>
+                </article>
+              </li>
+              <li class="category__item">
+                <article class="cart">
+                  <img class="cart__img" src="images/content/category/black_burger.jpg" alt="чисбургер" width="140">
+                  <h3 class="cart__subtitle">Черный гамбургер</h3>
+                  <p class="cart__price">199 руб.</p>
+                  <button class="button cart__btn" type="button">В корзину</button>
+                </article>
+              </li>
+              <li class="category__item">
+                <article class="cart">
+                  <img class="cart__img" src="images/content/category/king_cheez.jpg" alt="чисбургер" width="140">
+                  <h3 class="cart__subtitle">Королевский чизбургер</h3>
+                  <p class="cart__price">260 руб.</p>
+                  <button class="button cart__btn" type="button">В корзину</button>
+                </article>
+              </li>
+              <li class="category__item">
+                <article class="cart">
+                  <img class="cart__img" src="images/content/category/black_burger.jpg" alt="чисбургер" width="140">
+                  <h3 class="cart__subtitle">Черный гамбургер</h3>
+                  <p class="cart__price">199 руб.</p>
+                  <button class="button cart__btn" type="button">В корзину</button>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="store">
+      <div class="container">
+        <div class="store__content" style="background-image: url('images/content/marketing.png')">
+          <div class="store__box">
+            <h2 class="title store__title">Скачайте мобильное приложение</h2>
+            <p class="store__text">
+              Рестораны, которые вы любите - в ваших руках. Устанавливайте приложение и заказывайте еду в любом удобном
+              месте.
+            </p>
+            <a class="store__link" href="#"><img class="store__link-img" src="images/content/appstore.png"
+                alt="сылка на app store" width="120" height="40"></a>
+            <a class="store__link" href="#"><img class="store__link-img" src="images/content/googleplay.png"
+                alt="сылка на google play" width="120" height="40"></a>
+          </div>
         </div>
       </div>
     </section>
