@@ -74,28 +74,23 @@
       <div class="container">
         <div class="catalog__head">
           <h2 class="title catalog__title">Каталог продуктов</h2>
-          <ul class="catalog__show">
-            <li class="catalog__show-item">
-              <select class="catalog__select">
-                <option value="">По названию</option>
-                <option value="">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-                <option value="">5</option>
-              </select>
-            </li>
-            <li class="catalog__show-item">
-              <select class="catalog__select">
-                <option value="">по 12</option>
-                <option value="">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-                <option value="">5</option>
-              </select>
-            </li>
-          </ul>
+          <form class="catalog__show">
+            <select class="catalog__show-sort select-style">
+              <option value="">По названию</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+            </select>
+            <select class="catalog__show-numbers select-style">
+              <option value="">по 12</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+            </select>
+          </form>
         </div>
-
         <div class="catalog__inner">
           <div class="catalog__filters filter">
             <div class="filter-category filter__item">

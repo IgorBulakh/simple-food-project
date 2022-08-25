@@ -22,4 +22,6 @@ $(function () {
       $(".filter-price__prev--max").text(data.to);
     },
   });
+
+  $(".select-style").styler();
 });
