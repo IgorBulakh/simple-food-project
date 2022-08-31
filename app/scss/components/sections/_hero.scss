@@ -35,7 +35,16 @@
     padding: 2px;
     font-size: 20px;
     line-height: 1.5;
-    text-decoration: underline;
+    position: relative;
+
+    &::after {
+      content: " ";
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 3px;
+      border-bottom: 1px solid $fir-green;
+    }
   }
 
 }
