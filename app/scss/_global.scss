@@ -131,41 +131,43 @@ a {
 
 
 .irs--flat {
-  height: 85px;
-}
 
-.irs--flat .irs-line {
+  & .irs-line {
   height: 2px;
   background-color: $gray;
   border-radius: none;
+  }
 
-}
-
-.irs--flat .irs-bar {
+  & .irs-bar {
   height: 2px;
   background-color: $orange-crayola;
-}
+  }
 
-.irs--flat .irs-handle {
+  & .irs-handle {
   top: 17px;
   width: 18px;
   height: 18px;
   background-color: $orange-crayola;
   border-radius: 50%;
-}
+  }
 
-
-.irs--flat .irs-handle > i:first-child {
+  & .irs-handle > i:first-child {
   display: none;
+  }
+
+  & .irs-min,
+  & .irs-max {
+  display: none;
+  }
+
+  & .irs-from, 
+  & .irs-to, 
+  & .irs-single {
+  display: none;
+  }
 }
 
-.irs--flat .irs-min, .irs--flat .irs-max {
-  display: none;
-}
 
-.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
-  display: none;
-}
 
 .pagination {
   display: flex;
