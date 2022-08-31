@@ -153,8 +153,6 @@
             <div class="filter-price filter__item">
               <h3 class="filter__title">Цена</h3>
               <form class="filter-price__form" action="#">
-                <input class="filter-price__input" type="text" data-min="0" data-max="1200" data-from="100"
-                  data-to="1000">
                 <label class="filter-price__label">
                   <span class="filter-price__box">
                     от
@@ -167,6 +165,8 @@
                     $
                   </span>
                 </label>
+                <input class="filter-price__input" type="text" data-min="0" data-max="1200" data-from="100"
+                  data-to="1000">
               </form>
             </div>
           </div>
@@ -269,7 +269,8 @@
                 </article>
               </li>
             </ul>
-            <ul class="pagination">
+
+            <!-- <ul class="pagination">
               <li class="pagination__item">
                 <a class="pagination__prew pagination__item-link" href="#">
                   <svg class="pagination__prew-icon" height="25" width="25">
@@ -289,8 +290,31 @@
                   </svg>
                 </a>
               </li>
-            </ul>
+            </ul> -->
 
+            <div class="pagination">
+              <a class="arrow-prew pagination__item-link" href="#">
+                <svg class="pagination__prew-icon" height="25" width="25">
+                  <use xlink:href="images/sprite.svg#prevarrow"></use>
+                </svg>
+              </a>
+
+              <ul class="pagination__list">
+                <li class="pagination__item pagination__item--active"><a class="pagination__item-link" href="#">1</a>
+                </li>
+                <li class="pagination__item"><a class="pagination__item-link" href="#">2</a></li>
+                <li class="pagination__item"><span class="pagination__item-link" href="#">...</span></li>
+                <li class="pagination__item"><a class="pagination__item-link" href="#">9</a></li>
+                <li class="pagination__item"><a class="pagination__item-link" href="#">10</a></li>
+              </ul>
+
+              <a class="arrow-next pagination__item-link" href="#">
+                <svg class="pagination__next-icon" height="25" width="25">
+                  <use xlink:href="images/sprite.svg#nextarrow"></use>
+                </svg>
+              </a>
+
+            </div>
 
           </div>
         </div>
