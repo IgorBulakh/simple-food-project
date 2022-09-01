@@ -24,4 +24,9 @@ $(function () {
   });
 
   $(".select-style").styler();
+
+  $(".stars").rateYo({
+    rating: 1.6,
+    starWidth: "16px",
+  });
 });
