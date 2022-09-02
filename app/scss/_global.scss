@@ -215,14 +215,61 @@ a {
   }
 }
 
+.product-form {
+  display: flex;
+  align-items: center;
 
-.pagination__prew-icon {
+  &__input {
+    // text-align: center;
+  }
+  
+  &__button {
+    display: flex;
+    align-items: center;
+    padding: 13px 38px;
+    margin-left: 20px;
+    stroke: $white;
+
+    &:hover {
+      stroke: $orange-crayola;
+    }
+  }
+
+  &__link-icon {
+    margin-right: 16px;
+  }
 }
 
 
-.pagination__item--active {
+.jq-number {
+
+  &__field {
+  width: 100px;
+  border: 1px solid #ccc;
+  border-bottom-color: rgb(204, 204, 204);
+  border-bottom-color: #b3b3b3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 1px 1px #f1f1f1,0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 1px 1px #f1f1f1,0 1px 2px rgba(0, 0, 0, 0.1);
+
+
+    & input {
+      
+      text-align: center;
+
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px 9px;
+  border: none;
+  outline: none;
+  background: none;
+  font: 14px Arial,sans-serif;
+  color: #333;
 }
-.pagination__next {
-}
-.pagination__next-icon {
+  }
+
+
+
 }

@@ -23,10 +23,12 @@ $(function () {
     },
   });
 
-  $(".select-style").styler();
+  $(".select-style, .product-form__input").styler();
 
   $(".stars").rateYo({
-    rating: 1.6,
     starWidth: "16px",
+    normalFill: "#C1C1C1",
+    ratedFill: "#FFB800",
+    readOnly: true,
   });
 });

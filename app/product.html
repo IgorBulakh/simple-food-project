@@ -82,8 +82,17 @@
           <div class="choice__content">
             <h2 class="title choice__title">Чизбургер с листьями салата</h2>
             <div class="choice__offer">
-              <div class="stars"></div>
+              <div class="stars" data-rateyo-rating="2.5"></div>
               <p class="choice__price">160 руб.</p>
+              <form class="choice__form product-form" action="#">
+                <input class="product-form__input" type="number" value="1">
+                <button class="button product-form__button" type="submit">
+                  <svg class="product-form__link-icon" height="16" width="16">
+                    <use xlink:href="images/sprite.svg#basket"></use>
+                  </svg>
+                  Добавить в корзину
+                </button>
+              </form>
             </div>
             <div class="choice__order">
               <h3 class="title choice__subtitle">Доставка и оплата</h3>
