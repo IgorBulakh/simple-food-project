@@ -124,8 +124,13 @@
       }
 
     &:hover {
-      color: $orange-crayola;    
+      color: $orange-crayola; 
+      .filter-offer__checkbox {
+        border: 1px solid $orange-crayola;
+        transition: all 0.3s;
       }
+    }  
+      
     }
 
   &__input {
@@ -136,14 +141,12 @@
       border-radius: 3px;
       background-image: url(../../../images/icons/check.svg);
       background-repeat: no-repeat;
-      background-position: center;
-    }
+      background-position: center; 
+      }
 
-    &:hover + .filter-offer__checkbox,
+
     &:focus + .filter-offer__checkbox {
       border: 1px solid $orange-crayola;
-      
-      
     }
   }
 
@@ -155,7 +158,6 @@
     border: 1px solid $dark-siver;
     border-radius: 3px;
     left: 0%;
-    
   }
 
 }
