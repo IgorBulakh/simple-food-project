@@ -1,13 +1,27 @@
 .product {
   padding: 60px 0;
+  border-bottom: 1px solid $gray;
 
   &__choice {
     display: flex;
   }
 
+  &__tab {
+    padding: 30px 0 60px 0;
+  }
+
+  &__box {
+    max-width: 690px;
+    margin: 0 auto;
+  }
+
+  &__lists-top {
+    display: flex;
+    // justify-content: center;
+    margin-bottom: 30px;
+  }
+
 }
-
-
 
 
 .choice {
@@ -63,12 +77,6 @@
 
 
 
-
-
-
-
-
-
 .product-form {
 }
 .product-form__input {
@@ -81,14 +89,75 @@
 }
 .choice__order {
 }
-
-
 .choice__item {
 }
-
 .link {
 }
 .hero__link {
 }
 .product__review {
+}
+
+
+.tabs-category {
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+
+  &__link {
+    font-size: 24px;
+    line-height: 1.5;
+    color: $dark-blue;
+  }
+
+  &__link--active {
+    color: $orange-crayola;
+    
+  }
+}
+
+.tabs-content {
+  
+  &__item {
+    display: none;
+
+    &.tabs-content__item--active {
+      display: block;
+    }
+  }
+}
+
+.respond {
+  outline: 1px solid grey;
+
+  &__title {
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+
+  &__box {
+    display: flex;
+  }
+
+  &__img {
+    border-radius: 50%;
+    margin-right: 25px;
+  }
+
+  &__subbox {
+    width: 100%;
+    outline: 1px solid grey;
+  }
+
+  &__reiting {
+  
+  }
+
 }

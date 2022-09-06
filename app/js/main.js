@@ -1,4 +1,13 @@
 $(function () {
+  $(".tabs-category__link").on("click", function (e) {
+    e.preventDefault();
+    $(".tabs-category__link").removeClass("tabs-category__link--active");
+    $(this).addClass("tabs-category__link--active");
+
+    $(".tabs-content__item").removeClass("tabs-content__item--active");
+    $($(this).attr("href")).addClass("tabs-content__item--active");
+  });
+
   $(".slider-inner").slick({
     dots: true,
     arrows: true,
