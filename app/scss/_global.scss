@@ -343,3 +343,122 @@ a {
   border-color: black;
 }
 
+
+// form-product-page
+
+.respond-form {
+
+
+  &__reiting {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__reiting-text {
+    margin-right: 15px;
+    line-height: 1.3;
+    color: $coment-text;
+  }
+
+  &__box {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__label {
+    line-height: 1.3;
+    color: $coment-text;
+  }
+
+  &__label--textarea {
+    width: 100%;
+    margin-right: 30px;
+
+    & .respond-form__input {
+    min-height: 165px;
+    resize: vertical;
+    }
+    
+  }
+
+  &__input {
+    width: 100%;
+    padding: 16px 18px;
+    margin-top: 15px;
+    background: $white;
+    border: 1px solid #C2C2C2;
+    border-radius: 5px;
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 1.3;
+      opacity: 0.3;
+    }
+
+  }
+
+  &__box-input {
+    width: 65%;
+    align-items: revert;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__save {
+    display: flex;
+    align-items: flex-start;
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+
+  &__cheked {
+    @extend %checkbox-hidden;
+
+    &:checked + .respond-form__cheked-custom {
+      border: 1px solid $fir-green;
+      border-radius: 3px;
+      background-image: url(../images/icons/check.svg);
+      background-repeat: no-repeat;
+      background-position: center; 
+      }
+
+    &:focus + .respond-form__cheked-custom {
+      border: 1px solid $orange-crayola;
+    }
+  
+  }
+
+  &__cheked-custom {
+    height: 24px;
+    min-width: 24px;
+    margin-right: 10px;
+    background: $white;
+    border: 1px solid $gray;
+    border-radius: 3px;
+    position: relative;
+    &::before {
+      content: " ";
+      position: absolute;
+      width: 12px;
+      height: 9px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      // background-image: url(../images/icons/check.svg);
+    }
+  }
+
+  &__cheked-text {
+    font-size: 18px;
+    line-height: 1.3;
+    color: $coment-text;
+    cursor: pointer;
+  }
+
+  &__button {
+    width: 200px;
+    height: 47px;
+  }
+}

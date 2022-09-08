@@ -150,14 +150,14 @@
 
           <ul class="product__lists-bottom tabs-content">
             <li class="tabs-content__item" id="tab-1">
-              <p class="tabs-content">
+              <p class="tabs-content__text">
                 Рубленый бифштекс из натуральной говядины на карамелизованной булочке, с ломтиком сыра «Чеддер»,
                 кетчупом, горчицей, луком и маринованными огурчиками.
               </p>
-              <p class="tabs-content">
+              <p class="tabs-content__text">
                 Аллергены: Глютен, Молоко, Горчица, Может содержать сою, яйцо, следы кунжута
               </p>
-              <p class="tabs-content">
+              <p class="tabs-content__text">
                 Внешний вид товара может отличаться от изображений, представленных на сайте.
               </p>
             </li>
@@ -197,14 +197,64 @@
                         </div>
                       </div>
                       <p class="respond__text">
-                        этот бургер неплохой чтобы перекусить, когда нет возможности или времени
-                        что-нибудь приготовить. Это отличный вариант, чтобы съесть на ходу, но чтобы побаловать себя, я
-                        больше предпочту пиццу
+                        Доставили быстро. Товар свежий и очень вкусный, буду пробовать еще!))
+                      </p>
+                    </blockquote>
+                  </li>
+                  <li class="respond__item">
+                    <blockquote class="respond__block">
+                      <div class="respond__box">
+                        <img class="respond__img" src="images/avatar/avatar.png" alt="фотография автора" width="70"
+                          height="70">
+                        <div class="respond__subbox">
+                          <cite class="respond__author">Екатерина Белая</cite>
+                          <span class="stars respond__reiting" data-rateyo-rating="3.5"></span>
+                          <p class="respond__data">7.06.2021</p>
+                        </div>
+                      </div>
+                      <p class="respond__text">
+                        этот бургер неплохой чтобы перекусить, когда нет возможности или времени что-нибудь приготовить.
+                        Это отличный вариант, чтобы съесть на ходу, но чтобы побаловать себя, я больше предпочту пиццу
                       </p>
                     </blockquote>
                   </li>
                 </ul>
-                <form action="respond__form"></form>
+                <form class="product__form respond-form" action="#">
+                  <p class="title respond__title">Оставить отзыв</p>
+                  <div class="respond-form__reiting">
+                    <span class="respond-form__reiting-text">Ваша оценка *</span>
+                    <label class="respond-form__reiting-label">
+                      <input class="respond-form__reiting-check sr-only" type="radio">
+                      <span class="respond-form__reiting-stars"></span>
+                    </label>
+                  </div>
+                  <span class="respond-form__box">
+                    <label class="respond-form__label respond-form__label--textarea">
+                      Ваш отзыв *
+                      <textarea class="respond-form__input" name="message" required
+                        placeholder="Введите текст отзыва"></textarea>
+                    </label>
+                    <span class="respond-form__box-input">
+                      <label class="respond-form__label">
+                        Имя
+                        <input class="respond-form__input" type="text" name="name" placeholder="Введите ваше имя">
+                      </label>
+                      <label class="respond-form__label">
+                        Email *
+                        <input class="respond-form__input" type="email" name="email" required
+                          placeholder="youremail@mail.com">
+                      </label>
+                    </span>
+                  </span>
+                  <label class="respond-form__save">
+                    <input class="respond-form__cheked" type="checkbox">
+                    <span class="respond-form__cheked-custom"></span>
+                    <p class="respond-form__cheked-text">
+                      Сохранить моё имя, email и адрес сайта в этом браузере для последующих моих комментариев.
+                    </p>
+                  </label>
+                  <button class="button respond-form__button" type="submit">Оставить отзыв</button>
+                </form>
               </article>
             </li>
           </ul>
