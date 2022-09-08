@@ -20,6 +20,15 @@ $(function () {
     autoplaySpeed: 2000,
   });
 
+  $(".offer-categories__slider").slick({
+    infinite: false,
+    slidesToShow: 5,
+    prevArrow:
+      '<button type="button" class="slick-prev"><svg class="prev-rrow" height="34" width="34"><use xlink:href="images/sprite.svg#prevarrow"></use></svg></button>',
+    nextArrow:
+      '<button type="button" class="slick-next"><svg class="next-rrow" height="34" width="34"><use xlink:href="images/sprite.svg#nextarrow"></use></svg></button>',
+  });
+
   $(".filter-price__input").ionRangeSlider({
     type: "double",
     onStart: function (data) {

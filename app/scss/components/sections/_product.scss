@@ -206,4 +206,37 @@
 
 }
 
+.offer-categories {
+  padding: 60px 0;
+  
+  &__title {
+    text-align: left;
+    margin-bottom: 60px;
+  }
+  
+  &__slider {
+    margin-bottom: 0;
+
+  }
+
+  &__slider-item {
+    height: 100%;
+  }
+
+  & .slick-track {
+    height: 350px;
+    left: 11px;
+    top: 2px;
+  }
+
+  .slick-slide {
+    width: 210px;
+    height: 334px;
+
+    & div {
+      height: 100%;
+    }
+  }
+}
+
 
