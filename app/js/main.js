@@ -40,4 +40,10 @@ $(function () {
     ratedFill: "#FFB800",
     readOnly: true,
   });
+
+  $(".respond-form__reiting-stars").rateYo({
+    starWidth: "16px",
+    normalFill: "#C1C1C1",
+    ratedFill: "#FFB800",
+  });
 });

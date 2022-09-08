@@ -219,8 +219,41 @@
                     </blockquote>
                   </li>
                 </ul>
-                <form class="respond__form" action="#">
+                <form class="product__form respond-form" action="#">
                   <p class="title respond__title">Оставить отзыв</p>
+                  <div class="respond-form__reiting">
+                    <span class="respond-form__reiting-text">Ваша оценка *</span>
+                    <label class="respond-form__reiting-label">
+                      <input class="respond-form__reiting-check sr-only" type="radio">
+                      <span class="respond-form__reiting-stars"></span>
+                    </label>
+                  </div>
+                  <span class="respond-form__box">
+                    <label class="respond-form__label respond-form__label--textarea">
+                      Ваш отзыв *
+                      <textarea class="respond-form__input" name="message" required
+                        placeholder="Введите текст отзыва"></textarea>
+                    </label>
+                    <span class="respond-form__box-input">
+                      <label class="respond-form__label">
+                        Имя
+                        <input class="respond-form__input" type="text" name="name" placeholder="Введите ваше имя">
+                      </label>
+                      <label class="respond-form__label">
+                        Email *
+                        <input class="respond-form__input" type="email" name="email" required
+                          placeholder="youremail@mail.com">
+                      </label>
+                    </span>
+                  </span>
+                  <label class="respond-form__save">
+                    <input class="respond-form__cheked" type="checkbox">
+                    <span class="respond-form__cheked-custom"></span>
+                    <p class="respond-form__cheked-text">
+                      Сохранить моё имя, email и адрес сайта в этом браузере для последующих моих комментариев.
+                    </p>
+                  </label>
+                  <button class="button respond-form__button" type="submit">Оставить отзыв</button>
                 </form>
               </article>
             </li>

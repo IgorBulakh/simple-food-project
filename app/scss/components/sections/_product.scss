@@ -150,7 +150,7 @@
 }
 
 .respond {
-  outline: 1px solid grey;
+
 
   &__title {
     font-size: 24px;
@@ -164,8 +164,7 @@
   }
 
   &__item {
-    color: $coment-text;
-    // padding: 20px 0 25px 0;
+    color: $coment-text;;
 
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -173,9 +172,6 @@
       border-bottom: 1px solid $gray;
     }
 
-    // &:not(:first-child) {
-    //   padding-top: 30px;
-    // }
   }
 
 
@@ -191,7 +187,6 @@
 
   &__subbox {
     width: 100%;
-    outline: 1px solid grey;
   }
 
   &__author {
@@ -210,3 +205,5 @@
   }
 
 }
+
+
