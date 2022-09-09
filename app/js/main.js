@@ -24,9 +24,16 @@ $(function () {
     infinite: false,
     slidesToShow: 5,
     prevArrow:
-      '<button type="button" class="slick-prev"><svg class="prev-rrow" height="34" width="34"><use xlink:href="images/sprite.svg#prevarrow"></use></svg></button>',
+      '<button type="button" class="offer-categories__slick offer-categories__slick--prev"><svg class="prev-rrow" height="34" width="34"><use xlink:href="images/sprite.svg#prevarrow"></use></svg></button>',
     nextArrow:
-      '<button type="button" class="slick-next"><svg class="next-rrow" height="34" width="34"><use xlink:href="images/sprite.svg#nextarrow"></use></svg></button>',
+      '<button type="button" class="offer-categories__slick offer-categories__slick--next"><svg class="next-rrow" height="34" width="34"><use xlink:href="images/sprite.svg#nextarrow"></use></svg></button>',
+  });
+
+  $(".choice-slider").slick({
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: "linear",
   });
 
   $(".filter-price__input").ionRangeSlider({
