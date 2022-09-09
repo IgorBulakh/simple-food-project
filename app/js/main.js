@@ -33,7 +33,11 @@ $(function () {
     infinite: true,
     speed: 500,
     fade: true,
-    cssEase: "linear",
+    // cssEase: "linear",
+    prevArrow:
+      '<button type="button" class="choice-slider__arrow choice-slider__arrow--prev"><svg class="prev-rrow" height="34" width="34"><use xlink:href="images/sprite.svg#prevarrow"></use></svg></button>',
+    nextArrow:
+      '<button type="button" class="choice-slider__arrow choice-slider__arrow--next"><svg class="next-rrow" height="34" width="34"><use xlink:href="images/sprite.svg#nextarrow"></use></svg></button>',
   });
 
   $(".filter-price__input").ionRangeSlider({
