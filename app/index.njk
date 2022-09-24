@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сервис доставки еды Simple Food | Главная страница</title>
+  <link rel="icon" href="https://yoursite.ru/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/index.min.css">
+</head>
+
+<body>
+  {% include 'app/module/_header/_header.html' %}
+  <main class="main">
+    <h1 class="sr-only">Сервис дочтавки еды</h1>
+    {% include 'app/module/_hero/_hero.html' %}
+    {% include 'app/module/_category/_category.html' %}
+    {% include 'app/module/_banner/_banner.html' %}
+    {% include 'app/module/_restaurants/_restaurants.html' %}
+    {% include 'app/module/_response/_response.html' %}
+    {% include 'app/module/_store/_store.html' %}
+  </main>
+  {% include 'app/module/_footer/_footer.html' %}
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
