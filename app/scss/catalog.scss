@@ -1,0 +1,15 @@
+@import'fonts';
+@import'reset';
+@import'libs';
+@import'vars';
+@import'global';
+@import'components/slider';
+
+@import'components/logo';
+@import '../module/_header/_header';
+@import '../module/_breadcrumbs/_breadcrumbs';
+@import '../module/_catalog/_catalog';
+@import'components/carts/_product-carts';
+@import'../module/_store/_store';
+
+@import '../module/_footer/_footer';

@@ -23,7 +23,6 @@
 
 }
 
-
 .choice {
 
   &__content {
@@ -207,77 +206,6 @@
 
 }
 
-.offer-categories {
-  padding: 60px 0;
-  
-  &__title {
-    text-align: left;
-    margin-bottom: 60px;
-  }
-  
-  &__slider {
-    margin-bottom: 0;
 
-  }
-
-  &__slider-item {
-    height: 100%;
-  }
-
-  & .slick-track {
-    height: 350px;
-    left: 11px;
-    top: 2px;
-  }
-
-  .slick-slide {
-    width: 210px;
-    height: 334px;
-
-    & div {
-      height: 100%;
-    }
-  }
-
-  &__slick {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    top: -50px;
-    fill: $gray;
-    width: 34px;
-    height: 34px;
-    border: 2px solid $gray;
-    border-radius: 50%;
-    transition: all 0.3;
-    z-index: 1;
-
-    &:hover {
-      fill: $orange-crayola;
-      border-color: $orange-crayola;
-      background-color: rgba($orange-crayola, 0.2);
-      opacity: 0.5;
-    }
-
-    &:focus {
-      box-shadow: 0px 0px 0px 2px rgba($orange-crayola, 0.5);
-    }
-
-    &:active {
-      fill: $orange-crayola;
-      border-color: transparent;
-      background-color: rgba($orange-crayola, 0.2);
-      opacity: 0.5;
-    }
-  }
-
-    &__slick--prev {
-    right: 50px;
-  }
-
-  &__slick--next {
-    right: 0;
-  }
-}
 
 
