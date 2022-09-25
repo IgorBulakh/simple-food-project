@@ -13,7 +13,7 @@
   &__label {
     display: block;
     margin-bottom: 12px;
-      }
+  }
 
   &__input {
     width: 100%;
@@ -50,12 +50,16 @@
   }
 
   &__button-icon {
-    margin-right: 10px;
+    margin-right: 10px;    
   }
 
   &__menu {
     display: inline-block;
     column-count: 3;
+    .menu__item {
+      margin:0 30px 10px 0;
+      outline: 1px solid red;
+    }
   }
 
   &__copy {
@@ -117,23 +121,5 @@
   }
 }
 
-// .footer {
-
-//   &__list {
-//     display: flex;
-//     justify-content: space-between;
-//     padding-bottom: 60px;
-//   }
-
-//   &__item {
-//     width: 17%;
-
-//     &-subitem {
-//       margin-bottom: 20px;
-//     }
-//   }
-//   
-//   
-// }
 
 
