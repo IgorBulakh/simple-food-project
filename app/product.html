@@ -18,6 +18,10 @@
         <a class="logo" href="#">
           <img class="logo__img" src="images/logo.png" alt="логотип сайта">
         </a>
+        <button class="burger" type="button">
+          <span class="burger__line"></span>
+          <span class="sr-only"></span>
+        </button>
         <ul class="menu">
           <li class="menu__item">
             <a class="link menu__link menu__link--active" href="#">Главная</a>
@@ -48,6 +52,82 @@
             </button>
           </li>
         </ul>
+      </nav>
+      <nav class="dropdown">
+        <div class="dropdown__inner">
+          <a class="logo" href="#">
+            <img class="logo__img" src="images/logo.png" alt="логотип сайта">
+          </a>
+          <button class="burger burger--active" type="button">
+            <span class="burger__line"></span>
+            <span class="sr-only"></span>
+          </button>
+        </div>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="link menu__link menu__link--active" href="#">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="link menu__link" href="#">Блюда</a>
+          </li>
+          <li class="menu__item">
+            <a class="link menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <address class="address">
+          <ul class="address__list">
+            <li class="address__item">
+              <a class="address__link" href="#">
+                <svg class="button__icon footer__button-icon" width="19" height="19">
+                  <use xlink:href="images/sprite.svg#location"></use>
+                </svg>
+                ул. Смирнова 2/3
+              </a>
+            </li>
+            <li class="address__item">
+              <a class="address__link" href="tel:+79068057043">
+                <svg class="button__icon footer__button-icon" width="19" height="19">
+                  <use xlink:href="images/sprite.svg#calling"></use>
+                </svg>
+                79068057043
+              </a>
+            </li>
+            <li class="address__item">
+              <a class="address__link" href="mailto:support@sfood.com">
+                <svg class="button__icon footer__button-icon" width="19" height="19">
+                  <use xlink:href="images/sprite.svg#message"></use>
+                </svg>
+                support@sfood.com
+              </a>
+            </li>
+          </ul>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <svg class="social__link-icon" height="19" width="19">
+                  <use xlink:href="images/sprite.svg#facebook"></use>
+                </svg>
+                <span class="sr-only">перейти в фейсбук</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <svg class="social__link-icon" height="19" width="19">
+                  <use xlink:href="images/sprite.svg#twitter"></use>
+                </svg>
+                <span class="sr-only">перейти в твитер</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <svg class="social__link-icon" height="19" width="19">
+                  <use xlink:href="images/sprite.svg#instagram"></use>
+                </svg>
+                <span class="sr-only">перейти в инстаграм</span>
+              </a>
+            </li>
+          </ul>
+        </address>
       </nav>
     </div>
   </header>
