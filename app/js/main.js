@@ -8,6 +8,11 @@ $(function () {
     $($(this).attr("href")).addClass("tabs-content__item--active");
   });
 
+  $(".burger").on("click", function () {
+    // $(".burger").toggleClass("burger--active");
+    $(".dropdown").toggleClass("dropdown--active");
+  });
+
   $(".slider-inner").slick({
     dots: true,
     arrows: true,
