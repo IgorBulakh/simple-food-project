@@ -1,6 +1,6 @@
 .cart {
   // min-width: 210px;
-  max-width: 210px;
+  // max-width: 210px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -33,5 +33,31 @@
     margin-bottom: 10px;
     line-height: 1.4;
     font-weight: 600;
+  }
+
+  &__btn {
+    padding: 7px 16px;
+  }
+}
+
+
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+
+
+}
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+    .cart {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 14px;
   }
 }
