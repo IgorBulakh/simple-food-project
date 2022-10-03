@@ -12,6 +12,7 @@
   }
 
   &__slider-item {
+    max-width: 210px;
     height: 100%;
   }
 
@@ -21,14 +22,14 @@
     top: 2px;
   }
 
-  .slick-slide {
-    width: 210px;
-    height: 334px;
+  // .slick-slide {
+  //   width: 210px;
+  //   height: 334px;
 
-    & div {
-      height: 100%;
-    }
-  }
+  //   & div {
+  //     height: 100%;
+  //   }
+  // }
 
   &__slick {
     position: absolute;
