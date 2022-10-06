@@ -1,5 +1,5 @@
 .category {
-    padding: 120px 0 0;
+    padding: 120px 0 60px;
     text-align: center;
 
     &__title {
@@ -27,6 +27,7 @@
       fill: $dark-blue;
       box-shadow: 0px 0px 0px 1px $dark-siver;
       border-radius: 5px;
+      white-space: nowrap;
       
       &:hover {
         color: $orange-crayola;
@@ -64,6 +65,7 @@
 
 @media (max-width: 1200px) {
   .category{
+    padding-top: 100px;
     &__items {
       grid-column-gap: 20px;
     }
@@ -83,6 +85,11 @@
 
 @media (max-width: 992px) {
   .category {
+    padding-top: 80px;
+
+    &__title {
+      margin-bottom: 50px;
+    }
 
     &__menu-item {
       &:not(:last-child) {
@@ -110,19 +117,43 @@
 }
 @media (max-width: 768px) {
   .category {
+    padding-top: 60px;
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__button {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &__button-icon {
+      width: 20px;
+      height: 20px;
+    }
 
     &__items {
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 10px;
       grid-row-gap: 15px;
     }
+
+    
   }
 }
 
 @media (max-width: 576px) {
   .category {
+    padding: 40px 0;
+
+    &__title {
+      margin-bottom: 30px;
+    }
     
     &__button {
+      padding-left: 16px;
+      padding-right: 16px;
       font-size: 14px;
     }
 
