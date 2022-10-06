@@ -132,11 +132,18 @@
 
 
 @media (max-width: 1200px) {
+  .footer {
+    &__inner {
+    margin-bottom: 50px;
+    padding-top: 50px;
+    }
+  }
 
 }
   
 @media (max-width: 1022px) {
   .footer {
+
     &__menu {
       column-count: 2;
 
@@ -160,6 +167,8 @@
     &__inner {
       flex-wrap: wrap;
       justify-content: start;
+      padding-top: 40px;
+      margin-bottom: 40px;
     }
 
     &__form {
@@ -172,6 +181,11 @@
       padding: 0;
       margin-top: 30px;
     }
+
+    &__copy {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
   
 }
@@ -182,6 +196,7 @@
 
     &__inner {
       flex-direction: column;
+      margin-bottom: 30px;
     }
 
     &__form {
