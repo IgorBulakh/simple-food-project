@@ -21,8 +21,22 @@ $(function () {
     nextArrow:
       '<button type="button" class="slick-next"><svg class="next-rrow" height="34" width="34"><use xlink:href="images/sprite.svg#nextarrow"></use></svg></button>',
     fade: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 993,
+        settings: {
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          dots: false,
+        },
+      },
+    ],
   });
 
   $(".offer-categories__slider").slick({
@@ -42,6 +56,12 @@ $(function () {
       '<button type="button" class="choice-slider__arrow choice-slider__arrow--prev"><svg class="prev-rrow" height="34" width="34"><use xlink:href="images/sprite.svg#prevarrow"></use></svg></button>',
     nextArrow:
       '<button type="button" class="choice-slider__arrow choice-slider__arrow--next"><svg class="next-rrow" height="34" width="34"><use xlink:href="images/sprite.svg#nextarrow"></use></svg></button>',
+  });
+
+  $(".restaurants__list--slider").slick({
+    infinite: false,
+    // dots: true,
+    arrows: false,
   });
 
   $(".filter-price__input").ionRangeSlider({
