@@ -16,7 +16,8 @@
   }
   
   &__blockquote{
-    width: 45%;
+    max-width: 650px;
+    padding: 0 40px 10px 40px;
     display: flex;
     flex-direction: column;
     font-style: italic;
@@ -41,12 +42,12 @@
 
   &__text--quotes::before {
     background-image: url(../../../images/before.png);
-    left: -40px;
+    left: -35px;
   }
 
   &__text--quotes::after {
     background-image: url(../../../images/after.png);
-    right: -40px;
+    right: -35px;
   }
 
   
@@ -75,7 +76,7 @@
     }
 
     &__blockquote{
-      width: 50%;
+      // width: 50%;
 
     }
 
@@ -133,6 +134,15 @@
 
     &__title{
       margin-bottom: 30px;
+    }
+
+    &__blockquote {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+    &__text {
+      font-size: 14px;
     }
 
   }

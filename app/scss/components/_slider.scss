@@ -6,10 +6,11 @@
   .slick-arrow {
     position: absolute;
     display: inline-flex;
-    bottom: -3%;
+    // bottom: -3%;
     background-repeat: no-repeat;
     background-size: contain;
     border-radius: 50%;
+    z-index: 1;
 
     &:hover{
       fill: rgba($orange-crayola,  0.7);
@@ -86,10 +87,12 @@
     }
   }
 }
+
 @media (max-width: 768px) {
   .slider-inner {
   .slick-arrow {
-    top: 12%;
+    // top: 12%;
+    bottom: 75%;
     }
 
     .slick-prev {
@@ -106,15 +109,15 @@
     .slider-inner {
 
       .slick-arrow {
-    top: 10%;
+    bottom: 80%;
     }
 
     .slick-prev {
-      left: 25%;
+      left: 12%;
     }
 
     .slick-next {
-      right: 25%;
+      right: 12%;
     }
   }
 
