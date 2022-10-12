@@ -2,21 +2,21 @@
   padding: 60px 0;
 
   &__content {
-    padding: 50px 570px 40px 0;
+    padding: 40px 0 40px 0;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
+    position: relative;
+    z-index: 1;
   }
 
   &__box {
-    max-width: 80%;
+    max-width: 540px;
+    outline: 2px solid salmon;
   }
 
   &__title {
     margin-bottom: 45px;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 1.3;
     text-align: inherit;
   }
 
@@ -35,5 +35,108 @@
   &__image {
     background-repeat: no-repeat;
     background-size: cover;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .store {
+    &__content {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    &__box {
+      max-width: 499px;
+    }
+  }
+}
+
+@media (max-width: 1022px) {
+
+    .store {
+    &__content {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .store {
+    &__content {
+    
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: rgba($light-silver, 0.5);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+    }
+
+    &__box {
+      max-width: 470px;
+    }
+
+    &__title {
+      margin-bottom: 35px;
+
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  .store {
+    &__content {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    &__box {
+      max-width: 430px;
+    }
+
+    &__title {
+      margin-bottom: 25px;
+
+    }
+
+    &__text {
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .store {
+    &__content {
+      padding-top: 0;
+      padding-bottom: 0;
+      // opacity: 0;
+    }
+
+    &__box {
+      max-width: 430px;
+    }
+
+    &__title {
+      margin-bottom: 15px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
   }
 }
