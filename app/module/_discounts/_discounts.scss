@@ -1,11 +1,33 @@
 .discounts {
   padding: 60px 0;
-  background: rebeccapurple;
+
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
 
 
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+    .discounts {
+
+    &__title {
+    }
+
+    &__list {
+      display: none;
+    }
+
+    &__list--slider {
+      display: block;
+    }
+
+    &__item {
+      padding: 10px;
+    }
+  }
+}
 @media (max-width: 992px) {}
 @media (max-width: 768px) {}
 @media (max-width: 576px) {}
