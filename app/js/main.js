@@ -58,10 +58,21 @@ $(function () {
       '<button type="button" class="choice-slider__arrow choice-slider__arrow--next"><svg class="next-rrow" height="34" width="34"><use xlink:href="images/sprite.svg#nextarrow"></use></svg></button>',
   });
 
-  $(".restaurants__list--slider").slick({
+  $(".restaurants__list--slider, .discounts__list--slider").slick({
     infinite: false,
-    // dots: true,
+    dots: true,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 1201,
+        settings: {
+          // arrows: false,
+          // centerMode: true,
+          // centerPadding: "40px",
+          slidesToShow: 2,
+        },
+      },
+    ],
   });
 
   $(".filter-price__input").ionRangeSlider({
